@@ -7,7 +7,7 @@
   </head>
   <body class="bg-black text-white">
     <!-- section 1 -->
-    <div class="w-full borderlight">
+    <div class="w-full flex">
       <!-- header -->
       <header class="w-[30%] borderlight h-[100vh] flex justify-end">
         <div class="w-[60%] h-full">
@@ -83,7 +83,7 @@
             />More</span
           >
           <span
-            class="font-bold bg-blue-500 rounded-full flex justify-center items-center p-3 cursor-pointer mt-4 mb-16"
+            class="font-bold bg-blue-500 rounded-full flex justify-center items-center p-3 cursor-pointer mt-4 mb-16 w-[90%]"
             >Tweet</span
           >
           <span class="flex justify-around items-center px-3">
@@ -108,6 +108,42 @@
           </span>
         </div>
       </header>
+      <!-- two sided body (newsfeed and trends) -->
+      <main class="w-[70%] h-[100vh] borderlight">
+        <section class="w-[50%] h-full borderlight">
+          <div class="w-full flex flex-col">
+            <!-- container for home logo as a writeup -->
+            <div class="w-full font-bold p-3">Home</div>
+            <!-- container for for you & following -->
+            <div class="w-full flex justify-around">
+              <span
+                class="w-1/2 flex items-center justify-center font-bold flex-col mt-3"
+                >For you
+                <div class="w-[27%] bg-blue-500 rounded-full h-[5px] mt-3"></div
+              ></span>
+              <span class="w-1/2 flex items-center justify-center text-gray-400"
+                >Following</span
+              >
+            </div>
+          </div>
+          <!-- container for 'write a tweet' -->
+          <div class="w-full borderlight">
+            <span
+              class="h-[50%] rounded-full flex items-center borderlight text-xl mx-5 text-gray-400 tracking-wide"
+            >
+              <img
+                src="./img/@dvizible.jpeg"
+                alt="@dvizible"
+                class="w-14 h-14 rounded-full mr-5"
+              />What's happening?
+            </span>
+            <span class="w-full h-[50%] borderlight"> </span>
+          </div>
+          <div class="w-full borderlight"></div>
+          <div class="w-full borderlight"></div>
+        </section>
+        <section class=""></section>
+      </main>
     </div>
   </body>
 </html>
