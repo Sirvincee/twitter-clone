@@ -6,11 +6,11 @@
     <title>Twitter</title>
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
-  <body class="bg-black text-white">
+  <body class="bg-black text-white relative">
     <!-- section 1 -->
-    <div class="w-full flex">
+    <div class="w-full flex ">
       <!-- header -->
-      <header class="w-[30%] borderlight h-[100vh] flex justify-end">
+      <header class="w-[30%] border-r-2 border-gray-700  flex justify-end min-h-">
         <div class="w-[60%] h-full">
           <!-- twitter-icon -->
           <span class="block mb-3"
@@ -110,8 +110,9 @@
         </div>
       </header>
       <!-- two sided body (newsfeed and trends) -->
-      <main class="w-[70%] h-[100vh] borderlight">
-        <section class="w-[50%] h-full borderlight">
+      <main class="w-[70%] h-[100vh]  flex relative">
+        <!-- first part of the body-write a post and news feed -->
+        <section class="w-[55%] h-full ">
         <div class="w-full flex flex-col">
             <!-- container for home logo as a writeup -->
             <div class="w-full font-bold p-3">Home</div>
@@ -141,12 +142,12 @@
           <span class="w-full h-[50%]  flex justify-between py-2 border-b-0 border-gray-500 px-4">
               <!-- container for accessories -->
               <div class="w-[70%] flex justify-between items-center  px-20 ">
-                <span class="w-4 h-4"><img src="./icons/image-icon.png" alt="img-icon"></span>
+                <!-- <span class="w-4 h-4"><img src="./icons/image-icon.png" alt="img-icon"></span>
                 <span class="w-4 h-4"><img src="./icons/gif-icon.png" alt="gif-icon"></span>
                 <span class="w-4 h-4"><img src="./icons/poll-icon.png" alt="poll-icon"></span>
                 <span class="w-4 h-4"><img src="./icons/emoji-icon.png" alt="emoji-icon"></span>
                 <span class="w-4 h-4"><img src="./icons/schedule-icon.png" alt="schedule-icon"></span>
-                <span class="w-4 h-4"><img src="./icons/location-icon.png" alt="location-icon"></span>
+                <span class="w-4 h-4"><img src="./icons/location-icon.png" alt="location-icon"></span> -->
 
                 
               </div>
@@ -157,7 +158,99 @@
             </div>
           </span>
           <div class="w-full border-y-2 border-gray-700 flex justify-center items-center py-3 text-blue-500">Show 245 Tweets</div>
-          <section class=""></section>
+        </section>
+
+        <!-- 2nd part of the body (trends) -->
+        <section class="w-[45%] border-l-2 border-gray-700">
+          <!-- div for 'search-twitter' -->
+          <div class="w-[70%]  ml-7  rounded-full p-2 bg-gray-800 flex items-center mt-3" ><img src="./icons/search-icon.png" alt="search-icon" class="w-6 h-6 mr-4">
+
+          <input type="search" name="search-twitter" id="" placeholder="Search Twitter" class="bg-transparent w-full text-base outline-none"></div>
+          <!-- div for trends -->
+          <div class="w-[70%]  ml-10 mt-9 bg-gray-900">
+            <!-- trend for you -->
+            <div class="w-full font-bold text-xl p-2 ">Trends for you</div>
+
+            <!-- trends -->
+            <div class="w-full  text-gray-400 flex flex-col p-2">
+              <span class="w-full text-sm flex justify-between">Sports · Trending <img src="./icons/view_more-icon_2.png" alt="view_more-icon" class="w-5 h-5"></span>
+              <span class="w-full  text-white font-bold">Brother Benard</span>
+              <span class="w-full  text-sm">233K Tweets</span>
+            </div>
+
+            <div class="w-full  text-gray-400 flex flex-col p-2">
+              <span class="w-full text-sm flex justify-between">Trending <img src="./icons/view_more-icon_2.png" alt="view_more-icon" class="w-5 h-5"></span>
+              <span class="w-full  text-white font-bold">Ashewo</span>
+              <span class="w-full  text-sm">4,221 Tweets</span>
+            </div>
+
+            <div class="w-full  text-gray-400 flex flex-col p-2">
+              <span class="w-full text-sm flex justify-between">Music · Trending <img src="./icons/view_more-icon_2.png" alt="view_more-icon" class="w-5 h-5"></span>
+              <span class="w-full  text-white font-bold">Chef Chi</span>
+              <span class="w-full  text-sm">5,021 Tweets</span>
+            </div>
+
+            <div class="w-full  text-gray-400 flex flex-col p-2">
+              <span class="w-full text-sm flex justify-between">Sports · Trending <img src="./icons/view_more-icon_2.png" alt="view_more-icon" class="w-5 h-5"></span>
+              <span class="w-full  text-white font-bold">#Messi</span>
+              <span class="w-full  text-sm">1,807 Tweets</span>
+            </div>
+
+            <div class="w-full  text-gray-400 flex flex-col p-2">
+              <span class="w-full text-sm flex justify-between">News · Trending <img src="./icons/view_more-icon_2.png" alt="view_more-icon" class="w-5 h-5"></span>
+              <span class="w-full  text-white font-bold">Yahoo</span>
+              <span class="w-full  text-sm">219K Tweets</span>
+            </div>
+
+            <div class="w-full  text-gray-400 flex flex-col p-2">
+              <span class="w-full text-sm flex justify-between">Trending in Nigeria <img src="./icons/view_more-icon_2.png" alt="view_more-icon" class="w-5 h-5"></span>
+              <span class="w-full  text-white font-bold">Jemima</span>
+              <span class="w-full  text-sm">3,074 Tweets</span>
+            </div>
+
+            <div class="w-full  text-gray-400 flex flex-col p-2">
+              <span class="w-full text-sm flex justify-between">Trending in Nigeria <img src="./icons/view_more-icon_2.png" alt="view_more-icon" class="w-5 h-5"></span>
+              <span class="w-full  text-white font-bold">Jemima</span>
+              <span class="w-full  text-sm">3,074 Tweets</span>
+            </div>
+
+            <div class="w-full  text-gray-400 flex flex-col p-2">
+              <span class="w-full text-sm flex justify-between">Trending in Nigeria <img src="./icons/view_more-icon_2.png" alt="view_more-icon" class="w-5 h-5"></span>
+              <span class="w-full  text-white font-bold">Jemima</span>
+              <span class="w-full  text-sm">3,074 Tweets</span>
+            </div>
+
+            <div class="w-full  text-gray-400 flex flex-col p-2">
+              <span class="w-full text-sm flex justify-between">Trending in Nigeria <img src="./icons/view_more-icon_2.png" alt="view_more-icon" class="w-5 h-5"></span>
+              <span class="w-full  text-white font-bold">Jemima</span>
+              <span class="w-full  text-sm">3,074 Tweets</span>
+            </div>
+
+            <div class="w-full  text-gray-400 flex flex-col p-2">
+              <span class="w-full text-sm flex justify-between">Trending in Nigeria <img src="./icons/view_more-icon_2.png" alt="view_more-icon" class="w-5 h-5"></span>
+              <span class="w-full  text-white font-bold">Jemima</span>
+              <span class="w-full  text-sm">3,074 Tweets</span>
+            </div>
+
+            <div class="w-full  text-gray-400 flex flex-col p-2">
+              <span class="w-full text-sm flex justify-between">Trending in Nigeria <img src="./icons/view_more-icon_2.png" alt="view_more-icon" class="w-5 h-5"></span>
+              <span class="w-full  text-white font-bold">Jemima</span>
+              <span class="w-full  text-sm">3,074 Tweets</span>
+            </div>
+
+            <div class="w-full  text-gray-400 flex flex-col p-2">
+              <span class="w-full text-sm flex justify-between">Trending in Nigeria <img src="./icons/view_more-icon_2.png" alt="view_more-icon" class="w-5 h-5"></span>
+              <span class="w-full  text-white font-bold">Jemima</span>
+              <span class="w-full  text-sm">3,074 Tweets</span>
+            </div>
+
+            <div class="w-full  text-gray-400 flex flex-col p-2">
+              <span class="w-full text-sm flex justify-between">Trending in Nigeria <img src="./icons/view_more-icon_2.png" alt="view_more-icon" class="w-5 h-5"></span>
+              <span class="w-full  text-white font-bold">Jemima</span>
+              <span class="w-full  text-sm">3,074 Tweets</span>
+            </div>
+            
+          </div>
         </section>
       </main>
     </div>
