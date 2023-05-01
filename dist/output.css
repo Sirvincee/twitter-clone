@@ -713,6 +713,25 @@ video {
   height: 400px;
 }
 
+.h-\[450px\] {
+  height: 450px;
+}
+
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.min-h-fit {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+
+.min-h-max {
+  min-height: -moz-max-content;
+  min-height: max-content;
+}
+
 .w-1\/2 {
   width: 50%;
 }
