@@ -8,3 +8,7 @@
 .border{
     @apply border-4 border-white
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
